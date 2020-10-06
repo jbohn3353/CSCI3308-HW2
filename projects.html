@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/jbohn3353/"><img src="assets/github.png" alt="Github Logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+
+        <div class="container">
+            <div id="projectCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#projectCarousel" data-slide-to="1"></li>
+                  <li data-target="#projectCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://github.com/jbohn3353/TerminalChat"><img class="d-block w-100" src="assets/terminal.png" alt="TerminalChat"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="card ml-auto mr-auto w-100" style="width: 18rem; color: black;">
+                            <div class="card-body">
+                                <h5 class="card-title">TerminalChat</h5>
+                                <p class="card-text">
+                                    I work with Alexey Yermakov to create a multi user terminal chatroom using C++ and the winsock2 library.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/jbohn3353/KnightsTourSimulation"><img class="d-block w-100" src="assets/knightstour.jpg" alt="Knights Tour"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="card ml-auto mr-auto w-100" style="width: 18rem; color: black;">
+                            <div class="card-body">
+                                <h5 class="card-title">Knight's Tour Simulation</h5>
+                                <p class="card-text">
+                                    I was curious about the Knight's Tour problem. By simulating repeated iterations of the problem I was able to find some interesting
+                                    data such that are more or less unique tours depending on where you start on the board.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://ryosuzuki.org/roomshift/"><img class="d-block w-100" src="assets/roomshift.jpg" alt="RoomShift"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="card ml-auto mr-auto w-100" style="width: 18rem; color: black;">
+                            <div class="card-body">
+                                <h5 class="card-title">RoomShift</h5>
+                                <p class="card-text">
+                                    While working in the ACME lab at the ATLAS institute at CU Boulder, we devoloped a robot control system that allows autonomous
+                                    alteration of phsyical environments while in virtual reality using roombas and motion capture technology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+
+        
+
+        <br>
+        <nav class="navbar navbar-light bg-dark">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/jimmy-bohn-85a3b2143/"><img src="assets/linkedin.png" alt="Linkedin logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav> 
+    </body>
+</html>

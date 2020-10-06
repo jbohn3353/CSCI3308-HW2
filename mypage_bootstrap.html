@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="manage-cards.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/jbohn3353/"><img src="assets/github.png" alt="Github Logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+            <h3>
+                Bohn, James -
+                <small class="text-muted">Software Development Methods & Tools</small>
+            </h3>
+            <div class="card">
+                <div class="card-body">
+                    Hey I'm James. Some interesting things about me are that I was the national champion in canoe slalom, I am a top .1% World of Warcraft player, 
+                    and I have lived in Boulder my whole life! I am studying computer science because I enjoy the logical problem solving nature of it.
+                </div>
+            </div>
+            <br>
+            <p><img src="assets/james.jpg" alt="James with monkey" width="500px" height="500px" class="rounded-circle"></p>
+            <br>
+            
+            <h3 style='display: flex; flex-direction: row; width: 100%;'>
+                <span class = 'mr-auto'>My Interests</span>
+                <a href="form.html" class="btn btn-info" role="button">Add Interest</a>
+            </h3>
+            
+            <div style='display: flex; text-align: center;'>
+                <div id="interest1">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/kayak.jpg" alt="James kayaking" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Kayaking</h5>
+                            <p class="card-text">Canoe slalom is my favourite sport and I havve competed quite a lot in the past.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-sm mr-auto" role="button" onclick="addCard('interest1')" style="border-radius: 20em; width: 100%">+</a>
+                </div>
+                <div id="interest2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/wow.png" alt="World of Warcraft game art" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Games</h5>
+                            <p class="card-text">I play a lot of video games in my free time. Mostly World of Warcraft.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-sm mr-auto" role="button" onclick="addCard('interest2')" style="border-radius: 20em; width: 100%">+</a>
+                </div>
+                <div id="interest3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/math.jpg" alt="Map of mathematics" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Math</h5>
+                            <p class="card-text">I enjoy the depth of math immensely. It has fascinated me my whole life.</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-sm mr-auto" role="button" onclick="addCard('interest3')" style="border-radius: 20em; width: 100%">+</a>
+                </div>
+
+            </div>
+        </div> 
+        <nav class="navbar navbar-light bg-dark">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/jimmy-bohn-85a3b2143/"><img src="assets/linkedin.png" alt="Linkedin logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav> 
+    </body>
+</html>

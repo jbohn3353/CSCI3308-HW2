@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/jbohn3353/"><img src="assets/github.png" alt="Github Logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+
+
+        <div class="container">
+            <div id="form">
+                <h1>Add New Interest</h1>
+                <form>
+                    <div class="form-group row">
+                        <label for="interest-name">Interest Name</label>
+                        <input type="text" class="form-control" id="interest-name1" aria-describedby="textHelp" placeholder="Name">
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="interest-text">Text About Interest</label>
+                        <textarea class="form-control" id="interest-test1" rows="4"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="form-image">Upload local image:</label>
+                                <input type="file" class="form-control-file" id="form-image1">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="tweet-select">Select # Tweets to Display:</label>
+                                <select id="tweet-select1" class="form-control">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="interest-range">On a scale of 1-5, how interested in this are you?</label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="scaleRadio" id="scaleRadio1" value="1">
+                                <label class="form-check-label" for="scaleRadio1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="scaleRadio" id="scaleRadio2" value="2">
+                                <label class="form-check-label" for="scaleRadio2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="scaleRadio" id="scaleRadio3" value="3">
+                                <label class="form-check-label" for="scaleRadio3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="scaleRadio" id="scaleRadio4" value="4">
+                                <label class="form-check-label" for="scaleRadio4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="scaleRadio" id="scaleRadio5" value="5">
+                                <label class="form-check-label" for="scaleRadio5">5</label>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="row">
+                        <label for="form-login">Login to Finish Submitting</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <input type="text" class="form-control" id="form-login1" aria-describedby="textHelp" placeholder="Username">
+                        </div>
+                        <div class="form-group col-sm">
+                            <input type="password" class="form-control" id="form-login2" aria-describedby="passwordHelp" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="btn btn-primary" href="mypage_bootstrap.html" role="button">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+      
+        <br>
+        <nav class="navbar navbar-light bg-dark">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/jimmy-bohn-85a3b2143/"><img src="assets/linkedin.png" alt="Linkedin logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav> 
+    </body>
+</html>
