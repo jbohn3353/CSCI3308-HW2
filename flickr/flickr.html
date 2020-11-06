@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+    <meta charset="utf-8">
+    <title>API Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+    <script src="flickr.js"></script>
+    <link rel="stylesheet" href="flickr.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup-modal/login.html">Sign Up Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flickr.html">Tic Tac Toe</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/jbohn3353/"><img src="../assets/github.png" alt="Github Logo" style="width:42px;"></a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+
+        <div class="container">
+            <div id="form">
+                <form>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="countSelect">Select # of Images to Display:</label>
+                                <select id="countSelect" class="form-control">
+                                    <option value="0" selected>--</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                    <option value="70">70</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <label for="tagName">Image Tag:</label>
+                            <input type="text" class="form-control" id="tagName" aria-describedby="textHelp" placeholder="Tag">
+                        </div>
+                        
+                    </div>
+                </form>
+                <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="apiResults" class="card-columns">
+
+        </div>
+
+    </body>
+</html>
