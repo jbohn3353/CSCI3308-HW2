@@ -28,16 +28,20 @@ function makeApiCall(){
 
     $.ajax({url:url, dataType:"json"}).then(function(data) {
         console.log(data);
+        var appendStr = "";
         if(data.stat == "ok"){
+            appendStr += "<div class='card-columns'>";
             for(let i = 0; i < count; ++i){
-                document.getElementById("apiResults").innerHTML += `
+                appendStr += `
                     <div class="card" style="display: inline-block;">
                         <img class="card-img-top" src="${data.photos.photo[i].url_sq}">
                         <div class="card-body">
                             <h5 class="card-title">${data.photos.photo[i].title}</h5>
                         </div>
-                    </div>`
+                    </div>`;
             }
+            appendStr += "</div>";
+            document.getElementById("apiResults").innerHTML += appendStr;
         }
     });
 }
